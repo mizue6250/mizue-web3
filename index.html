@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Links</title>
 
-  <!-- ✅ ここにフォント読み込みを追加 -->
+  <!-- フォント読み込み -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-  <!-- ✅ ここがCSS（styleタグ） -->
+  <!-- スタイル定義 -->
   <style>
     body {
       font-family: 'Poppins', sans-serif;
       background: linear-gradient(135deg, #fdf6f0, #f7ede2);
       color: #4a3f35;
       text-align: center;
+      margin: 0;
     }
 
     h1 {
@@ -24,11 +24,30 @@
       color: #3b2e2a;
     }
 
+    p.bio {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+      color: #4a3f35;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 400px;
+      margin: 40px auto;
+    }
+
     .link-btn {
+      display: block;
+      padding: 15px;
+      border-radius: 30px;
       background: #f7ede2;
       color: #b25f4e;
       text-decoration: none;
       font-weight: 600;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
     }
 
     .link-btn:hover {
@@ -39,13 +58,22 @@
     a:visited {
       color: #7b6651;
     }
+
+    footer {
+      margin-top: 50px;
+      padding: 15px;
+      font-size: 0.8rem;
+      color: #7b6651;
+    }
   </style>
 </head>
+
 <body>
   <header>
     <h1>👋 My Links</h1>
     <p class="bio">Web3ライター | 学習ログ公開中</p>
   </header>
+
   <div class="links">
     <a href="https://twitter.com/onchain_mizue" class="link-btn">🐦 X (Twitter)</a>
     <a href="https://note.com/osoranokanatahe" class="link-btn">✍️ note 記事</a>
@@ -53,8 +81,9 @@
     <a href="https://github.com/mizue6250" class="link-btn">💻 GitHub</a>
     <a href="mailto:osoranokanatahe@gmail.com" class="link-btn">📩 Contact</a>
   </div>
+
   <footer>
-    © 2025 My Name | Powered by GitHub Pages
+    © 2025 Mizue | Powered by GitHub Pages
   </footer>
 </body>
 </html>
