@@ -1,57 +1,43 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Links</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- ✅ ここにフォント読み込みを追加 -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- ✅ ここがCSS（styleタグ） -->
   <style>
     body {
       font-family: 'Poppins', sans-serif;
-      margin: 0;
       background: linear-gradient(135deg, #fdf6f0, #f7ede2);
       color: #4a3f35;
       text-align: center;
     }
-    header {
-      padding: 60px 20px 30px;
-    }
+
     h1 {
+      font-family: 'Playfair Display', serif;
       font-size: 2.5rem;
-      margin-bottom: 10px;
+      color: #3b2e2a;
     }
-    p.bio {
-      font-size: 1.1rem;
-      color: #444;
-    }
-    .links {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      max-width: 400px;
-      margin: 40px auto;
-    }
+
     .link-btn {
-      display: block;
-      padding: 15px;
-      border-radius: 30px;
-      background: #fff;
-      background: #fff; → background: #f7ede2;
+      background: #f7ede2;
+      color: #b25f4e;
       text-decoration: none;
-      font-weight: bold;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: all 0.3s ease;
+      font-weight: 600;
     }
+
     .link-btn:hover {
-      background: #d3c0ae;
-      color: #4a3f35;
+      background: #e6d3c6;
+      color: #d6a77a;
     }
-    footer {
-      margin-top: 50px;
-      padding: 15px;
-      font-size: 0.8rem;
-      color: #fff;
-      background: rgba(0,0,0,0.3);
+
+    a:visited {
+      color: #7b6651;
     }
   </style>
 </head>
